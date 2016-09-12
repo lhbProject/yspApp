@@ -1,0 +1,35 @@
+@baseFont: 75;
+@greenBj: #77d9d4;
+.widthRem (@num) {
+    width: unit(@num/@baseFont,rem);
+}
+.heightRem (@num) {
+    height: unit(@num/@baseFont,rem);
+}
+.greenBtn {
+    background: @greenBj;
+    color: #FFFFFF;
+}
+.border-radius (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.bg-size {
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.flex-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}

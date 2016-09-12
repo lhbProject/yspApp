@@ -1,0 +1,23 @@
+.greenBtn {
+  background: #77d9d4;
+  color: #FFFFFF;
+}
+.bg-size {
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.flex-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/*# sourceMappingURL=mixin.css.map */

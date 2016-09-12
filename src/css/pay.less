@@ -1,0 +1,108 @@
+@import "mixin.less";
+.pay-wrap {
+    height: 100%;
+    padding-bottom: unit(260/@baseFont,rem);
+    font-size: 14px;
+    .pay-title {
+        .heightRem(70);
+        line-height: unit(70/@baseFont,rem);
+        border-bottom: 1px solid rgba(4,0,0,0.25);
+        text-indent: unit(7/@baseFont,rem);
+    }
+    .pay-title:nth-child(3) {
+        .heightRem(80);
+        line-height: unit(80/@baseFont,rem);
+    }
+    .pay-info {
+        padding: unit(40/@baseFont,rem) 0;
+        font-size: 16px;
+        li {
+            margin-bottom: unit(20/@baseFont,rem);
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .pay-wechat {
+        margin: unit(22/@baseFont,rem) 0;
+        padding: 0 unit(18/@baseFont,rem) 0 unit(10/@baseFont,rem);
+        overflow: hidden;
+        .pay-w-icon {
+            float: left;
+            .widthRem(231);
+            .heightRem(80);
+            img {
+                .widthRem(231);
+                .heightRem(80);
+            }
+        }
+        .pay-h-icon {
+            float: right;
+            .heightRem(80);
+            &:before {
+                display: inline-block;
+                content: "";
+                width: 0;
+                height: 100%;
+                vertical-align: middle;
+            }
+            span {
+                display: inline-block;
+                .widthRem(44);
+                .heightRem(44);
+                vertical-align: middle;
+                background: url("../images/hook-blue.jpg") no-repeat;
+                -webkit-background-size: contain;
+                background-size: contain;
+            }
+        }
+    }
+    .pay-provision {
+        margin-top: unit(90/@baseFont,rem);
+        padding: 0 unit(18/@baseFont,rem) 0 unit(10/@baseFont,rem);
+        li {
+            margin-bottom: unit(18/@baseFont,rem);
+            span {
+                display: inline-block;
+                padding-left: unit(5/@baseFont,rem);
+            }
+        }
+    }
+    .form-submit-btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+[data-dpr="2"] .pay-wrap {
+    font-size: 28px;
+    .pay-info {
+        font-size: 30px;
+    }
+    .pay-provision {
+        li {
+            .fa {
+                font-size: 20px;
+            }
+            span {
+                font-size: 26px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .pay-wrap {
+    font-size: 40px;
+    .pay-info {
+        font-size: 42px;
+    }
+    .pay-provision {
+        li {
+            .fa{
+                font-size: 30px;
+            }
+            span {
+                font-size: 38px;
+            }
+        }
+    }
+}

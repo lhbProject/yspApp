@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的需求</title>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/formcss.css" />
+		<link rel="stylesheet" type="text/css" href="css/order.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexible.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="container-wrap">
+				<header class="header">
+					<div class="header-content">
+						<div class="header-flex text-left">
+							<span class="return-page-btn">
+								<i class="fa fa-angle-left fa-2x"></i>
+							</span>
+						</div>
+						<div class="header-flex-2 text-center">
+							<h2 class="head-tit">我的需求</h2>
+						</div>
+						<div class="header-flex text-right">
+							<span class="go-home-btn">
+								<i class="fa fa-home fa-2x"></i>
+							</span>
+						</div>
+					</div>
+				</header>
+				<section class="section-wrap">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!--这里放置真实显示的DOM内容-->
+							<div class="order-nav">
+								<div class="order-nav-link active" data-href="demand.html">我的需求</div>
+								<div class="order-nav-link" data-href="order.html">我的订单</div>
+							</div>
+							<div class="order-wrap">
+								<div class="order-item">
+									<div class="tit">需求编号：XDD64132164020</div>
+									<div class="main" data-href="demand-details.html">
+										<ul>
+											<li>
+												<span><i class="fa fa-jpy"></i></span>
+												<p>价格预算：10000-20000元</p>
+											</li>
+											<li>
+												<span><i class="fa fa-table"></i></span>
+												<p>服务档期：2016.1.1-2016.2.2</p>
+											</li>
+											<li>
+												<span><i class="fa fa-clock-o"></i></span>
+												<p>提交时间：2016.6.6</p>
+											</li>
+										</ul>
+										<div class="warning-tip">已有2名月嫂竞聘，距离竞聘截止还有1小时10分</div>
+									</div>
+									<button class="default-btn" data-href="view-yuesao.html">查看月嫂</button>
+								</div>
+								<div class="order-item">
+									<div class="tit">需求编号：XDD64132164020</div>
+									<div class="main">
+										<ul>
+											<li>
+												<span><i class="fa fa-jpy"></i></span>
+												<p>价格预算：10000-20000元</p>
+											</li>
+											<li>
+												<span><i class="fa fa-table"></i></span>
+												<p>服务档期：2016.1.1-2016.2.2</p>
+											</li>
+											<li>
+												<span><i class="fa fa-clock-o"></i></span>
+												<p>提交时间：2016.6.6</p>
+											</li>
+										</ul>
+									</div>
+									<button class="default-btn cancel-btn">已取消</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		<!--<script type="text/javascript">
+			var h = $(window).height() - $('.header').height() - $('.mui-slider-indicator').height() - $('.mui-slider-progress-bar').height();
+			$('.mui-slider-group').height(h);
+		</script>-->
+	</body>
+
+</html>

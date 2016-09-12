@@ -1,0 +1,192 @@
+.greenBtn {
+  background: #77d9d4;
+  color: #FFFFFF;
+}
+.bg-size {
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.flex-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.order-nav {
+  width: 10rem;
+  height: 1.0666666666666667rem;
+  line-height: 1.0666666666666667rem;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.order-nav .order-nav-link {
+  width: 5rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-bottom: 0.05333333333333334rem solid #c8c7cc;
+  text-align: center;
+}
+.order-nav .order-nav-link.active {
+  color: #51c5d6;
+  border-bottom-color: #51c5d6;
+}
+[data-dpr="2"] .order-nav {
+  font-size: 32px;
+}
+[data-dpr="3"] .order-nav {
+  font-size: 48px;
+}
+.order-wrap {
+  font-size: 16px;
+  padding-top: 0.24rem;
+}
+.order-wrap .order-item {
+  width: 9.466666666666667rem;
+  margin: 0 auto 0.26666666666666666rem;
+  color: #1d1d1c;
+  -webkit-border-radius: 0.10666666666666667rem;
+  -moz-border-radius: 0.10666666666666667rem;
+  border-radius: 0.10666666666666667rem;
+  -webkit-box-shadow: 0 6px 19px rgba(4, 0, 0, 0.16);
+  -moz-box-shadow: 0 6px 19px rgba(4, 0, 0, 0.16);
+  box-shadow: 0 6px 19px rgba(4, 0, 0, 0.16);
+  overflow: hidden;
+}
+.order-wrap .order-item .tit {
+  height: 1.16rem;
+  padding-left: 0.4266666666666667rem;
+  line-height: 1.16rem;
+  border-bottom: 1px dashed #dbdbdb;
+}
+.order-wrap .order-item .main {
+  padding: 0.21333333333333335rem 0.4266666666666667rem 0;
+  color: #4d4d4d;
+  flex: 1;
+}
+.order-wrap .order-item .main li {
+  padding: 0.21333333333333335rem 0;
+}
+.order-wrap .order-item .main span {
+  width: 0.4rem;
+  display: inline-block;
+  text-align: center;
+}
+.order-wrap .order-item .main p {
+  padding-left: 0.2rem;
+  display: inline-block;
+  color: #4d4d4d;
+  font-size: 16px;
+}
+.order-wrap .order-item .main.order-main {
+  padding: 0.26666666666666666rem 0.4266666666666667rem;
+}
+.order-wrap .order-item .main.order-main .user-img {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: middle;
+}
+.order-wrap .order-item .main.order-main .user-img img {
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.order-wrap .order-item .main.order-main .list {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5066666666666667rem;
+}
+[data-dpr="2"] .order-wrap {
+  font-size: 28px;
+}
+[data-dpr="2"] .order-wrap .order-item .main p {
+  font-size: 28px;
+}
+[data-dpr="3"] .order-wrap {
+  font-size: 42px;
+}
+[data-dpr="3"] .order-wrap .order-item .main p {
+  font-size: 42px;
+}
+/*需求详情*/
+.demand-wrap {
+  background: #FFFFFF;
+  margin-top: 0.37333333333333335rem;
+  padding: 0.5333333333333333rem 0.5333333333333333rem 2.6666666666666665rem;
+  font-size: 16px;
+}
+.demand-wrap ul li {
+  margin-bottom: 0.3333333333333333rem;
+}
+[data-dpr='2'] .demand-wrap {
+  font-size: 30px;
+}
+[data-dpr='3'] .demand-wrap {
+  font-size: 48px;
+}
+/*申请退款*/
+.refund-wrap {
+  padding-bottom: 1.3333333333333333rem;
+}
+.refund-wrap .white-wrap {
+  padding: 0.4266666666666667rem 0;
+}
+/*在线评价*/
+.evaluation-wrap {
+  font-size: 16px;
+}
+.evaluation-wrap .white-wrap {
+  padding: 0.24rem 0;
+}
+.evaluation-wrap .white-wrap .title,
+.evaluation-wrap .white-wrap .time {
+  font-size: 16px;
+  margin-left: 0.5333333333333333rem;
+}
+.evaluation-wrap .score-star {
+  padding: 0.6666666666666666rem;
+  text-align: center;
+}
+.evaluation-wrap .score-star li {
+  margin-bottom: 0.16rem;
+}
+.evaluation-wrap .score-star li .fa {
+  margin-left: 0.24rem;
+}
+.evaluation-wrap .score-star li:last-child {
+  margin: 0;
+}
+.evaluation-wrap .g-form-wrap .g-form-group .form-textarea {
+  height: 3.6rem;
+}
+[data-dpr='2'] .evaluation-wrap {
+  font-size: 30px;
+}
+[data-dpr='2'] .evaluation-wrap .white-wrap .title,
+[data-dpr='2'] .evaluation-wrap .white-wrap .time {
+  font-size: 30px;
+}
+[data-dpr='3'] .evaluation-wrap {
+  font-size: 48px;
+}
+[data-dpr='3'] .evaluation-wrap .white-wrap .title,
+[data-dpr='3'] .evaluation-wrap .white-wrap .time {
+  font-size: 48px;
+}
+/*# sourceMappingURL=order.css.map */

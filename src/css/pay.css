@@ -1,0 +1,122 @@
+.greenBtn {
+  background: #77d9d4;
+  color: #FFFFFF;
+}
+.bg-size {
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.flex-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.pay-wrap {
+  height: 100%;
+  padding-bottom: 3.466666666666667rem;
+  font-size: 14px;
+}
+.pay-wrap .pay-title {
+  height: 0.9333333333333333rem;
+  line-height: 0.9333333333333333rem;
+  border-bottom: 1px solid rgba(4, 0, 0, 0.25);
+  text-indent: 0.09333333333333334rem;
+}
+.pay-wrap .pay-title:nth-child(3) {
+  height: 1.0666666666666667rem;
+  line-height: 1.0666666666666667rem;
+}
+.pay-wrap .pay-info {
+  padding: 0.5333333333333333rem 0;
+  font-size: 16px;
+}
+.pay-wrap .pay-info li {
+  margin-bottom: 0.26666666666666666rem;
+}
+.pay-wrap .pay-info li:last-child {
+  margin-bottom: 0;
+}
+.pay-wrap .pay-wechat {
+  margin: 0.29333333333333333rem 0;
+  padding: 0 0.24rem 0 0.13333333333333333rem;
+  overflow: hidden;
+}
+.pay-wrap .pay-wechat .pay-w-icon {
+  float: left;
+  width: 3.08rem;
+  height: 1.0666666666666667rem;
+}
+.pay-wrap .pay-wechat .pay-w-icon img {
+  width: 3.08rem;
+  height: 1.0666666666666667rem;
+}
+.pay-wrap .pay-wechat .pay-h-icon {
+  float: right;
+  height: 1.0666666666666667rem;
+}
+.pay-wrap .pay-wechat .pay-h-icon:before {
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.pay-wrap .pay-wechat .pay-h-icon span {
+  display: inline-block;
+  width: 0.5866666666666667rem;
+  height: 0.5866666666666667rem;
+  vertical-align: middle;
+  background: url("../images/hook-blue.jpg") no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.pay-wrap .pay-provision {
+  margin-top: 1.2rem;
+  padding: 0 0.24rem 0 0.13333333333333333rem;
+}
+.pay-wrap .pay-provision li {
+  margin-bottom: 0.24rem;
+}
+.pay-wrap .pay-provision li span {
+  display: inline-block;
+  padding-left: 0.06666666666666667rem;
+}
+.pay-wrap .form-submit-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+[data-dpr="2"] .pay-wrap {
+  font-size: 28px;
+}
+[data-dpr="2"] .pay-wrap .pay-info {
+  font-size: 30px;
+}
+[data-dpr="2"] .pay-wrap .pay-provision li .fa {
+  font-size: 20px;
+}
+[data-dpr="2"] .pay-wrap .pay-provision li span {
+  font-size: 26px;
+}
+[data-dpr="3"] .pay-wrap {
+  font-size: 40px;
+}
+[data-dpr="3"] .pay-wrap .pay-info {
+  font-size: 42px;
+}
+[data-dpr="3"] .pay-wrap .pay-provision li .fa {
+  font-size: 30px;
+}
+[data-dpr="3"] .pay-wrap .pay-provision li span {
+  font-size: 38px;
+}
+/*# sourceMappingURL=pay.css.map */

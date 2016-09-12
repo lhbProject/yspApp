@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>填写匹配需求</title>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/formcss.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexible.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/match.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="container-wrap">
+				<header class="header">
+					<div class="header-content">
+						<div class="header-flex text-left">
+							<span class="return-page-btn">
+								<i class="fa fa-angle-left fa-2x"></i>
+							</span>
+						</div>
+						<div class="header-flex-2 text-center">
+							<h2 class="head-tit">填写匹配需求</h2>
+						</div>
+						<div class="header-flex text-right">
+							<span class="go-home-btn">
+								<i class="fa fa-home fa-2x"></i>
+							</span>
+						</div>
+					</div>
+				</header>
+				<section class="section-wrap">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!--这里放置真实显示的DOM内容-->
+							<div class="form-wrap">
+								<div class="form-group">
+									<label for="">预产期</label>
+									<input type="text" class="form-text" readonly="readonly" placeholder="选择预产日期" id="match_yc_date" />
+								</div>
+								<div class="form-group">
+									<label for="">服务天数</label>
+									<div class="form-inline">
+										<div class="radio" id="match_fw_day">
+											<button class="btn on radio-btn" data-day="26">26天</button>
+											<button class="btn radio-btn" data-day="40">40天</button>
+											<input type="number" class="form-text small-text text-center" placeholder="服务天数" />
+										</div>
+
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">服务胎数</label>
+									<div class="form-inline">
+										<div class="radio" id="match_number">
+											<button class="btn radio-btn on">单胞胎</button>
+											<button class="btn radio-btn">双胞胎</button>
+											<button class="btn radio-btn">多胞胎</button>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">年龄偏好</label>
+									<div class="form-inline" id="match_age">
+										<input type="number" class="form-text small-text text-center" placeholder="28" />&nbsp;&nbsp;—&nbsp;&nbsp;
+										<input type="number" class="form-text small-text text-center" placeholder="50" />&nbsp;岁
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">能力偏好</label>
+									<select name="" class="form-select" id="match_ability">
+										<option value="0">经验丰富</option>
+										<option value="1">经验丰富2</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="">预计报价</label>
+									<div class="form-inline" id="match_price">
+										<input type="number" class="form-text small-text text-center" />&nbsp;&nbsp;—&nbsp;&nbsp;
+										<input type="number" class="form-text small-text text-center" />&nbsp;元
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">宗教信仰</label>
+									<select name="" class="form-select" id="match_faith">
+										<option value="">均可</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="">
+											地域偏好
+										</label>
+									<select name="" class="form-select" id="match_area">
+										<option value="">均可</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="">服务区域</label>
+									<div class="location-city">
+										<input type="text" class="form-text" placeholder="默认定位城市，可更改" id="match_server" /><i class="fa fa-map-marker fa-2x"></i>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">服务地址</label>
+									<input type="text" class="form-text" placeholder="输入详细地址" id="match_addr" />
+								</div>
+								<div class="form-group">
+									<label for="">联系人</label>
+									<input type="text" class="form-text" placeholder="输入联系人姓名" id="match_name" />
+								</div>
+								<div class="form-group">
+									<label for="">联系方式</label>
+									<input type="number" class="form-text" placeholder="输入联系人手机号码" id="match_phone" />
+								</div>
+								<div class="form-group">
+									<label for="">备注</label>
+									<input type="text" class="form-text" placeholder="输入其他需要注明的事项" id="match_remark" />
+								</div>
+							</div>
+							<button id="match_submit" class="form-submit-btn">提交</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,174 @@
+@import "mixin.less";
+.order-nav {
+    width: 10rem;
+    .heightRem(80);
+    line-height: unit(80/@baseFont,rem);
+    font-size: 16px;
+    .flex-box;
+    .order-nav-link {
+        width: 5rem;
+        .flex;
+        border-bottom: unit(4/@baseFont,rem) solid #c8c7cc;
+        text-align: center;
+        &.active {
+            color: #51c5d6;
+            border-bottom-color: #51c5d6;
+        }
+    }
+}
+[data-dpr="2"] .order-nav {
+    font-size: 32px;
+}
+[data-dpr="3"] .order-nav {
+    font-size: 48px;
+}
+.order-wrap {
+    font-size: 16px;
+    padding-top: unit(18/@baseFont,rem);
+    .order-item {
+        .widthRem(710);
+        margin: 0 auto unit(20/@baseFont,rem);
+        color: #1d1d1c;
+        .border-radius(unit(8/@baseFont,rem));
+        -webkit-box-shadow: 0 6px 19px rgba(4,0,0,0.16);
+        -moz-box-shadow: 0 6px 19px rgba(4,0,0,0.16);
+        box-shadow: 0 6px 19px rgba(4,0,0,0.16);
+        overflow: hidden;
+        .tit {
+            .heightRem(87);
+            padding-left: unit(32/@baseFont,rem);
+            line-height: unit(87/@baseFont,rem);
+            border-bottom: 1px dashed #dbdbdb;
+        }
+        .main {
+            padding: unit(16/@baseFont,rem) unit(32/@baseFont,rem) 0;
+            color: #4d4d4d;
+            flex: 1;
+            li {
+                padding: unit(16/@baseFont,rem) 0;
+            }
+            span {
+                .widthRem(30);
+                display: inline-block;
+                text-align: center;
+            }
+            p {
+                padding-left: unit(15/@baseFont,rem);
+                display: inline-block;
+                color: #4d4d4d;
+                font-size: 16px;
+            }
+            &.order-main {
+                padding: unit(20/@baseFont,rem) unit(32/@baseFont,rem);
+                .user-img {
+                    display: inline-block;
+                    .widthRem(120);
+                    .heightRem(120);
+                    vertical-align: middle;
+                    img {
+                        width: 100%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                    }
+                }
+                .list {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: unit(38/@baseFont,rem);
+                }
+            }
+        }
+    }
+}
+[data-dpr="2"] .order-wrap {
+    font-size: 28px;
+    .order-item {
+        .main {
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .order-wrap {
+    font-size: 42px;
+    .order-item {
+        .main {
+            p {
+                font-size: 42px;
+            }
+        }
+    }
+}
+/*需求详情*/
+.demand-wrap {
+    background: #FFFFFF;
+    margin-top: unit(28/@baseFont,rem);
+    padding: unit(40/@baseFont,rem) unit(40/@baseFont,rem) unit(200/@baseFont,rem);
+    font-size: 16px;
+    ul {
+        li {
+            margin-bottom: unit(25/@baseFont,rem);
+        }
+    }
+}
+[data-dpr='2'] .demand-wrap {
+    font-size: 30px;
+}
+[data-dpr='3'] .demand-wrap {
+    font-size: 48px;
+}
+/*申请退款*/
+.refund-wrap {
+    padding-bottom: unit(100/@baseFont,rem);
+    .white-wrap {
+        padding: unit(32/@baseFont,rem) 0;
+    }
+}
+/*在线评价*/
+.evaluation-wrap {
+    font-size: 16px;
+    .white-wrap {
+        padding: unit(18/@baseFont,rem) 0;
+        .title,
+        .time {
+            font-size: 16px;
+            margin-left: unit(40/@baseFont,rem);
+        }
+    }
+    .score-star {
+        padding: unit(50/@baseFont,rem);
+        text-align: center;
+        li {
+            margin-bottom: unit(12/@baseFont,rem);
+            .fa {
+                margin-left: unit(18/@baseFont,rem);
+            }
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    .g-form-wrap .g-form-group .form-textarea {
+        .heightRem(270);
+    }
+}
+[data-dpr='2'] .evaluation-wrap {
+    font-size: 30px;
+    .white-wrap {
+        .title,
+        .time {
+            font-size: 30px;
+        }
+    }
+}
+[data-dpr='3'] .evaluation-wrap {
+    font-size: 48px;
+    .white-wrap {
+        .title,
+        .time {
+            font-size: 48px;
+        }
+    }
+}

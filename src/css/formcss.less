@@ -1,0 +1,268 @@
+@import "mixin.less";
+.form-wrap {
+    padding: unit(35/@baseFont,rem) unit(35/@baseFont,rem) 0;
+    overflow: hidden;
+    .form-group {
+        margin-bottom: unit(30/@baseFont,rem);
+        label {
+            display: block;
+            line-height: 1;
+            margin-bottom: unit(18/@baseFont,rem);
+            font-size: 14px;
+        }
+        .form-text,
+        .form-text-h,
+        .form-select,
+        .btn {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            .heightRem(60);
+            line-height: unit(60/@baseFont,rem);
+            border: 0;
+            font-size: 16px;
+        }
+        .form-text {
+            width: 100%;
+            border-bottom: unit(1/@baseFont,rem) solid #313131;
+            padding: unit(15/@baseFont,rem) 0;
+            border-radius: 0;
+            &.small-text {
+                .widthRem(120);
+                font-size: 14px;
+            }
+        }
+        .form-text-h {
+            width: 100%;
+            .heightRem(115);
+            border-bottom: unit(1/@baseFont,rem) solid #313131;
+            padding: unit(15/@baseFont,rem) 0;
+            border-radius: 0;
+            padding: unit(40/@baseFont,rem) 0;
+        }
+        .form-select {
+            border-bottom: 1px solid #313131!important;
+            border-radius: 0;
+            color: #c3c3c2;
+        }
+        .btn {
+            padding: 0 unit(28/@baseFont,rem);
+            background: #dbdbdb;
+            color: #fff;
+            -webkit-border-radius: unit(5/@baseFont,rem);
+            -moz-border-radius: unit(5/@baseFont,rem);
+            border-radius: unit(5/@baseFont,rem);
+            margin-right: unit(35/@baseFont,rem);
+            &.on {
+                background: #fac260;
+            }
+        }
+        .location-city {
+            position: relative;
+            .fa-map-marker {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: unit(-48/@baseFont/2,rem);
+            }
+        }
+    }
+    &.form-m0 {
+        padding-top: 0;
+        .form-group {
+            margin-bottom: unit(1/@baseFont,rem);
+        }
+    }
+}
+[data-dpr="2"] .form-wrap {
+    .form-group {
+        label {
+            font-size: 26px;
+        }
+        .form-text,
+        .form-text-h,
+        .form-select,
+        .btn {
+            font-size: 28px;
+        }
+        .form-text {
+            &.small-text {
+                font-size: 28px;
+            }
+        }
+    }
+}
+[data-dpr="3"] .form-wrap {
+    .form-group {
+        label {
+            font-size: 38px;
+        }
+        .form-text,
+        .form-text-h,
+        .form-select,
+        .btn {
+            font-size: 42px;
+        }
+        .form-text {
+            &.small-text {
+                font-size: 40px;
+            }
+        }
+    }
+}
+.form-submit-btn {
+    width: 100%;
+    .heightRem(100);
+    .greenBtn;
+    font-size: 18px;
+    span {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        margin-top: unit(-3/@baseFont,rem);
+    }
+}
+[data-dpr="2"] .form-submit-btn {
+    font-size: 32px;
+    span {
+        font-size: 24px;
+    }
+}
+[data-dpr="3"] .form-submit-btn {
+    font-size: 48px;
+    span {
+        font-size: 36px;
+    }
+}
+.fixed-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.default-btn {
+    width: 100%;
+    .heightRem(84);
+    .greenBtn;
+    color: #FFFFFF;
+    font-size: 12px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size: 18px;
+    &.cancel-btn {
+        background: #a8a8a8;
+    }
+    &.blue-btn {
+        background: #88d4e3;
+    }
+    &.orange-btn {
+        background: #f0b144;
+    }
+}
+[data-dpr="2"] .default-btn {
+    font-size: 32px;
+}
+[data-dpr="3"] .default-btn {
+    font-size: 48px;
+}
+/*灰色背景表单*/
+.g-form-wrap {
+    width: 100%;
+    padding: unit(20/@baseFont,rem) unit(30/@baseFont,rem);
+    .g-form-group {
+        margin-bottom: 20px;
+        .g-form-input {
+            .heightRem(80);
+            line-height: unit(80/@baseFont,rem);
+            padding: 0 unit(24/@baseFont,rem);
+            background: #f4f4f4;
+            border: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+}
+[data-dpr="2"] .g-form-wrap {
+    .g-form-input {
+        font-size: 28px;
+    }
+}
+[data-dpr="3"] .g-form-wrap {
+    .g-form-input {
+        font-size: 42px;
+    }
+}
+.btn-gl-shadow {
+    width: 10rem;
+    .heightRem(179);
+    background: url("../images/green-l-btn.png") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    padding-top: unit(20/@baseFont,rem);
+    margin-top: unit(30/@baseFont,rem);
+    .user-l-btn {
+        display: block;
+        .widthRem(686);
+        .heightRem(104);
+        line-height: unit(104/@baseFont,rem);
+        margin: 0 auto;
+        color: #fff;
+        background: none;
+        font-size: 18px;
+    }
+}
+[data-dpr="2"] .btn-gl-shadow {
+    .user-l-btn {
+        font-size: 36px;
+    }
+}
+[data-dpr="3"] .btn-gl-shadow {
+    .user-l-btn {
+        font-size: 48px;
+    }
+}
+.radio {
+    .radio-btn {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        -ms-transition-duration: 0s;
+        -o-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+}
+/*mui修改后的样式*/
+.mui-segmented-control .mui-control-item {
+    .heightRem(76);
+    line-height: unit(76/@baseFont,rem);
+    font-size: 16px;
+}
+[data-dpr="2"] .mui-segmented-control .mui-control-item {
+    font-size: 32px;
+}
+[data-dpr="3"] .mui-segmented-control .mui-control-item {
+    font-size: 48px;
+}
+.mui-segmented-control.mui-segmented-control-inverted {
+    .mui-control-item {
+        color: #4a4a4a;
+        &.mui-active {
+            color: #51c5d6;
+            background: #FFFFFF;
+        }
+    }
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+    background-color: #51c5d6;
+    .heightRem(4);
+}
+.mui-slider {
+    height: 100%;
+    .mui-slider-group {
+        margin-top: unit(-4/@baseFont,rem);
+    }
+    .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+        border: 0;
+        border-top: unit(4/@baseFont,rem) solid #c8c7cc;
+    }
+}

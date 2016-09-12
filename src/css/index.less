@@ -1,0 +1,170 @@
+@import"mixin.less";
+.banner {
+    width: 10rem;
+    .heightRem(595);
+    position: relative;
+    overflow: hidden;
+    .banner-view {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        font-size: 0;
+        .img {
+            display: inline-block;
+            width: 10rem;
+            vertical-align: top;
+            
+            img {
+                width: 10rem;
+            }
+        }
+    }
+    ul {
+        position: absolute;
+        width: 100%;
+        bottom: unit(98/@baseFont,rem);
+        text-align: center;
+        z-index: 9;
+        li {
+            display: inline-block;
+            .widthRem(16);
+            .heightRem(16);
+            border: unit(2/@baseFont,rem) solid #ffffff;
+            .border-radius(50%);
+            background: none;
+            overflow: hidden;
+            margin: 0 10px;
+            &.active {
+                background: #FFFFFF;
+            }
+        }
+    }
+}
+.main {
+    position: relative;
+    top: unit(-73/@baseFont,rem);
+    left: 0;
+    padding-bottom: unit(32/@baseFont,rem);
+    z-index: 99;
+    .ellipse {
+        width: 100%;
+        .heightRem(73);
+        overflow: hidden;
+        .svg-e {
+            .heightRem(420);
+        }
+    }
+    .logo-wrap {
+        width: 10rem;
+        .heightRem(161);
+        position: relative;
+        .logo {
+            position: absolute;
+            top: unit(-64/@baseFont,rem);
+            left: 50%;
+            .widthRem(194);
+            .heightRem(203);
+            margin-left: unit(-194/@baseFont/2,rem);
+            background: url("../images/logo.jpg") no-repeat;
+            .bg-size;
+            z-index: 10;
+            h1 {
+                opacity: 0;
+            }
+        }
+    }
+    .features {
+        width: 10rem;
+        text-align: center;
+        .features-link {
+            display: block;
+            color: #383838;
+        }
+        .match,
+        .reservation,
+        .signed,
+        .evaluation {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .img {
+            display: block;
+            .widthRem(90);
+            .heightRem(90);
+            margin: 0 auto;
+        }
+        .match .img {
+            background: url("../images/match.png") no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+        .reservation .img {
+            background: url("../images/reservation.png") no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+        .signed .img {
+            background: url("../images/signed.png") no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+        .evaluation .img {
+            background: url("../images/evaluation.png") no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+        .arrow-r {
+            display: inline-block;
+            .widthRem(55);
+            .heightRem(90);
+            vertical-align: top;
+            background: url("../images/arrowR.png") no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+            margin: 0 unit(12/@baseFont,rem);
+        }
+        h6 {
+            margin-top: unit(12/@baseFont,rem);
+            font-size: 14px;
+        }
+    }
+}
+.match-btn-box {
+    margin-top: unit(70/@baseFont,rem);
+    .match-btn {
+        display: block;
+        margin: 0 auto;
+        .greenBtn;
+        .widthRem(695);
+        .heightRem(102);
+        font-size: 22px;
+        -webkit-border-radius: unit(10/@baseFont,rem);
+        -moz-border-radius: unit(10/@baseFont,rem);
+        border-radius: unit(10/@baseFont,rem);
+    }
+}
+[data-dpr="2"] {
+    .features {
+        h6 {
+            font-size: 24px;
+        }
+    }
+    .match-btn-box {
+        .match-btn {
+            font-size: 36px;
+        }
+    }
+}
+[data-dpr="3"] {
+    .features {
+        h6 {
+            font-size: 36px;
+        }
+    }
+    .match-btn-box {
+        .match-btn {
+            font-size: 48px;
+        }
+    }
+}

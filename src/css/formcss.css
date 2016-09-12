@@ -1,0 +1,267 @@
+.greenBtn {
+  background: #77d9d4;
+  color: #FFFFFF;
+}
+.bg-size {
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.flex-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.form-wrap {
+  padding: 0.4666666666666667rem 0.4666666666666667rem 0;
+  overflow: hidden;
+}
+.form-wrap .form-group {
+  margin-bottom: 0.4rem;
+}
+.form-wrap .form-group label {
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.24rem;
+  font-size: 14px;
+}
+.form-wrap .form-group .form-text,
+.form-wrap .form-group .form-text-h,
+.form-wrap .form-group .form-select,
+.form-wrap .form-group .btn {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border: 0;
+  font-size: 16px;
+}
+.form-wrap .form-group .form-text {
+  width: 100%;
+  border-bottom: 0.013333333333333334rem solid #313131;
+  padding: 0.2rem 0;
+  border-radius: 0;
+}
+.form-wrap .form-group .form-text.small-text {
+  width: 1.6rem;
+  font-size: 14px;
+}
+.form-wrap .form-group .form-text-h {
+  width: 100%;
+  height: 1.5333333333333334rem;
+  border-bottom: 0.013333333333333334rem solid #313131;
+  padding: 0.2rem 0;
+  border-radius: 0;
+  padding: 0.5333333333333333rem 0;
+}
+.form-wrap .form-group .form-select {
+  border-bottom: 1px solid #313131 !important;
+  border-radius: 0;
+  color: #c3c3c2;
+}
+.form-wrap .form-group .btn {
+  padding: 0 0.37333333333333335rem;
+  background: #dbdbdb;
+  color: #fff;
+  -webkit-border-radius: 0.06666666666666667rem;
+  -moz-border-radius: 0.06666666666666667rem;
+  border-radius: 0.06666666666666667rem;
+  margin-right: 0.4666666666666667rem;
+}
+.form-wrap .form-group .btn.on {
+  background: #fac260;
+}
+.form-wrap .form-group .location-city {
+  position: relative;
+}
+.form-wrap .form-group .location-city .fa-map-marker {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -0.32rem;
+}
+.form-wrap.form-m0 {
+  padding-top: 0;
+}
+.form-wrap.form-m0 .form-group {
+  margin-bottom: 0.013333333333333334rem;
+}
+[data-dpr="2"] .form-wrap .form-group label {
+  font-size: 26px;
+}
+[data-dpr="2"] .form-wrap .form-group .form-text,
+[data-dpr="2"] .form-wrap .form-group .form-text-h,
+[data-dpr="2"] .form-wrap .form-group .form-select,
+[data-dpr="2"] .form-wrap .form-group .btn {
+  font-size: 28px;
+}
+[data-dpr="2"] .form-wrap .form-group .form-text.small-text {
+  font-size: 28px;
+}
+[data-dpr="3"] .form-wrap .form-group label {
+  font-size: 38px;
+}
+[data-dpr="3"] .form-wrap .form-group .form-text,
+[data-dpr="3"] .form-wrap .form-group .form-text-h,
+[data-dpr="3"] .form-wrap .form-group .form-select,
+[data-dpr="3"] .form-wrap .form-group .btn {
+  font-size: 42px;
+}
+[data-dpr="3"] .form-wrap .form-group .form-text.small-text {
+  font-size: 40px;
+}
+.form-submit-btn {
+  width: 100%;
+  height: 1.3333333333333333rem;
+  background: #77d9d4;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.form-submit-btn span {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin-top: -0.04rem;
+}
+[data-dpr="2"] .form-submit-btn {
+  font-size: 32px;
+}
+[data-dpr="2"] .form-submit-btn span {
+  font-size: 24px;
+}
+[data-dpr="3"] .form-submit-btn {
+  font-size: 48px;
+}
+[data-dpr="3"] .form-submit-btn span {
+  font-size: 36px;
+}
+.fixed-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.default-btn {
+  width: 100%;
+  height: 1.12rem;
+  background: #77d9d4;
+  color: #FFFFFF;
+  font-size: 12px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-size: 18px;
+}
+.default-btn.cancel-btn {
+  background: #a8a8a8;
+}
+.default-btn.blue-btn {
+  background: #88d4e3;
+}
+.default-btn.orange-btn {
+  background: #f0b144;
+}
+[data-dpr="2"] .default-btn {
+  font-size: 32px;
+}
+[data-dpr="3"] .default-btn {
+  font-size: 48px;
+}
+/*灰色背景表单*/
+.g-form-wrap {
+  width: 100%;
+  padding: 0.26666666666666666rem 0.4rem;
+}
+.g-form-wrap .g-form-group {
+  margin-bottom: 20px;
+}
+.g-form-wrap .g-form-group .g-form-input {
+  height: 1.0666666666666667rem;
+  line-height: 1.0666666666666667rem;
+  padding: 0 0.32rem;
+  background: #f4f4f4;
+  border: 0;
+  margin: 0;
+  font-size: 14px;
+}
+[data-dpr="2"] .g-form-wrap .g-form-input {
+  font-size: 28px;
+}
+[data-dpr="3"] .g-form-wrap .g-form-input {
+  font-size: 42px;
+}
+.btn-gl-shadow {
+  width: 10rem;
+  height: 2.3866666666666667rem;
+  background: url("../images/green-l-btn.png") no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  padding-top: 0.26666666666666666rem;
+  margin-top: 0.4rem;
+}
+.btn-gl-shadow .user-l-btn {
+  display: block;
+  width: 9.146666666666667rem;
+  height: 1.3866666666666667rem;
+  line-height: 1.3866666666666667rem;
+  margin: 0 auto;
+  color: #fff;
+  background: none;
+  font-size: 18px;
+}
+[data-dpr="2"] .btn-gl-shadow .user-l-btn {
+  font-size: 36px;
+}
+[data-dpr="3"] .btn-gl-shadow .user-l-btn {
+  font-size: 48px;
+}
+.radio .radio-btn {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/*mui修改后的样式*/
+.mui-segmented-control .mui-control-item {
+  height: 1.0133333333333334rem;
+  line-height: 1.0133333333333334rem;
+  font-size: 16px;
+}
+[data-dpr="2"] .mui-segmented-control .mui-control-item {
+  font-size: 32px;
+}
+[data-dpr="3"] .mui-segmented-control .mui-control-item {
+  font-size: 48px;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+  color: #4a4a4a;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+  color: #51c5d6;
+  background: #FFFFFF;
+}
+.mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-progress-bar {
+  background-color: #51c5d6;
+  height: 0.05333333333333334rem;
+}
+.mui-slider {
+  height: 100%;
+}
+.mui-slider .mui-slider-group {
+  margin-top: -0.05333333333333334rem;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-group .mui-slider-item {
+  border: 0;
+  border-top: 0.05333333333333334rem solid #c8c7cc;
+}
+/*# sourceMappingURL=formcss.css.map */

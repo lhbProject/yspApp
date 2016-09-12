@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>修改个人资料</title>
+		<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/formcss.css" />
+		<link rel="stylesheet" type="text/css" href="../css/user.css" />
+		<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css" />
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/flexible.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/member.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				edit_photo.init();
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="container-wrap">
+				<header class="header">
+					<div class="header-content">
+						<div class="header-flex text-left">
+							<span class="return-page-btn">
+								<i class="fa fa-angle-left fa-2x"></i>
+							</span>
+						</div>
+						<div class="header-flex-2 text-center">
+							<h2 class="head-tit">修改个人资料</h2>
+						</div>
+						<div class="header-flex text-right">
+							<span class="go-home-btn">
+								<i class="fa fa-home fa-2x"></i>
+							</span>
+						</div>
+					</div>
+				</header>
+				<section class="section-wrap gray-wrap">
+					<div class="user-photo">
+						<img id="user_photo_img" src="../images/user-photo.jpg" alt="" />
+						<input type="file" id="user_photo_path" accept="image/jpeg,image/gif,image/png" />
+					</div>
+					<div id="nickName" class="user-name text-center"></div>
+					<div class="user-btn-group">
+						<button id="edit_name" class="user-btn" data-href="edit-name.html">修改昵称</button>
+						<button id="edit_password" class="user-btn" data-href="edit-pwd.html">修改密码</button>
+					</div>
+					<div class="fixed-bottom">
+						<button class="form-submit-btn" id="edit_photo_btn">保存</button>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+
+</html>

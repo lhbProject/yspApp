@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/user.css" />
+		<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css" />
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/flexible.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/member.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				member.init();
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="container-wrap">
+				<section class="section-wrap gray-wrap">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<div class="member-wrap">
+								<div class="member-header">
+									<div class="member-info">
+										<div class="img" data-href="edit-member.html">
+											<img src="../images/ys-img.png" />
+										</div>
+										<div id="nickName" class="name text-center"></div>
+									</div>
+									<div class="member-nav">
+										<div class="member-btn">
+											<button data-href="../order.html">我的订单</button>
+										</div>
+										<div class="member-btn">
+											<button data-href="">我的消息</button>
+										</div>
+									</div>
+								</div>
+								<div class="member-list">
+									<div class="member-item" data-href="recommend.html">
+										<i class="fa fa-thumbs-up"></i><span>我的推荐</span>
+									</div>
+									<div class="member-item">
+										<i class="fa fa-info-circle"></i><span>关于我们</span>
+									</div>
+									<div class="member-item" data-href="withdraw.html">
+										<i class="fa fa-arrow-circle-down"></i><span>提现账号</span>
+									</div>
+									<div class="member-item" data-href="login.html">
+										<i class="fa fa-exchange"></i><span>更换账号</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer class="footer">
+					<nav class="footer-nav">
+						<a class="home" data-href="../index.html">
+							<span></span>
+							<p>首页</p>
+						</a>
+						<a class="order" data-href="../order.html">
+							<span></span>
+							<p>订单</p>
+						</a>
+						<a class="my active" data-href="member.html">
+							<span></span>
+							<p>我的</p>
+						</a>
+						<a class="service" data-href="">
+							<span></span>
+							<p>客服</p>
+						</a>
+					</nav>
+				</footer>
+			</div>
+		</div>
+	</body>
+
+</html>
